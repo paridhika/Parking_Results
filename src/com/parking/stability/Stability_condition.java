@@ -37,7 +37,7 @@ public class Stability_condition {
 	}
 	
 	private static void initialize_mqttws(){
-		mu1 = 0.125;  //get
+		mu1 = 0.05;  //get
 		mu2 = 0.0025; //put
 		mu3 = 0.0025; //delete
 		nu = 1;
@@ -58,11 +58,11 @@ public class Stability_condition {
 		// TODO Auto-generated method stub
 		//initialize_coap();
 		//initialize_mqtt();
-		initialize_xmpp();
-		//initialize_mqttws();
-	//	server_utilization(0.2);
+		//initialize_xmpp();
+		initialize_mqttws();
+		server_utilization(0.2);
 	//	server_utilization(0.6);
-		server_utilization(0.8);
+	//	server_utilization(0.8);
 	}
 	
 	 /* CoAP Utilization rates
@@ -84,9 +84,9 @@ public class Stability_condition {
 	 */
 	
 	 /* MQTTWS Utilization rates
-	  * 20% - get = 1.0 put = 14.5
-	  * 60% - get = 3.0 put = 43.5
-	  * 80% - get = 6.0 put = 7.0
+	  * 20% - get = 3.5 put = 3.15
+	  * 60% - get = 10.48 put = 9.95
+	  * 80% - get = 14.37 put = 9.0
 	 */
 
 }
