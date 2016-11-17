@@ -66,9 +66,9 @@ public class Stability_condition {
 	}
 	
 	 /* CoAP Utilization rates
-	  * 20% - get = 1.2000000000000004 put = 1.1000000000000003
-	  * 60% - get = 5.04999999999999 put = 2.549999999999999
-	  * 80% - get = 7.599999999999981 put = 2.9499999999999975
+	  * 20% - get = 1.2 put = 1.1
+	  * 60% - get = 5.05 put = 2.55
+	  * 80% - get = 7.56 put = 2.95
 	 */
 	
 	 /* MQTT Utilization rates
