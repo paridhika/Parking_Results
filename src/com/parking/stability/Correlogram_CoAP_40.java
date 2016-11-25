@@ -8,14 +8,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 
-public class Correlogram_MQTT_60 {
+public class Correlogram_CoAP_40 {
 
 	private static BufferedReader delete,put,get;
 
 	public static void main(String[] args) throws IOException {
-		delete = new BufferedReader(new FileReader("/home/paridhika/git/MQTT_Parking/mosquitto/Results/run1/60/delete_simulation_service_time_60_run1.csv"));
-		put = new BufferedReader(new FileReader("/home/paridhika/git/MQTT_Parking/mosquitto/Results/run1/60/put_simulation_service_time_60_run1.csv"));
-		get = new BufferedReader(new FileReader("/home/paridhika/git/MQTT_Parking/mosquitto/Results/run1/60/get_simulation_service_time_60_run1.csv"));
+		delete = new BufferedReader(new FileReader("/home/paridhika/git/CoAP_Parking/libcoap-code/examples/Results/run1/40/delete_simulation_service_time_40_run1.csv"));
+		put = new BufferedReader(new FileReader("/home/paridhika/git/CoAP_Parking/libcoap-code/examples/Results/run1/40/put_simulation_service_time_40_run1.csv"));
+		get = new BufferedReader(new FileReader("/home/paridhika/git/CoAP_Parking/libcoap-code/examples/Results/run1/40/get_simulation_service_time_40_run1.csv"));
 
 		ArrayList<Double> r1 = new ArrayList<Double>();
 		ArrayList<Double> r2 = new ArrayList<Double>();
@@ -122,7 +122,7 @@ public class Correlogram_MQTT_60 {
 		System.out.println("Get: " + mean[2] +  " Percentile: " + percentile[2] + " Standard Diviation: " + SD[2] + " confidence: "	+ confidence[2] );
 		System.out.println("Overall: " + mean[3] +  " Percentile: " + percentile[3] + " Standard Diviation: " + SD[3] + " confidence: "	+ confidence[3] );
 		
-		/*FileWriter correlation = new FileWriter("/home/paridhika/git/MQTT_Parking/mosquitto/Results/Correlogram_60.csv");
+		/*FileWriter correlation = new FileWriter("/home/paridhika/git/CoAP_Parking/libcoap-code/examples/Results/Correlogram_40.csv");
 		correlation.append("Delete_Lag");
 		correlation.append(",");
 		correlation.append("Correlation");
