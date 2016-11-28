@@ -43,10 +43,10 @@ public class Stability_condition {
 		nu = 1;
 	}
 	private static void server_utilization(double utilization){
-		for (double i = 0.1; i<(67/nu);i+=0.01){
-			for( double j=0.1;(i+j) < (67/nu); j+=0.01){
-				double a = i*(mu1+mu3*nu);
-				double b = j*(mu2+mu3*nu);
+		for (double i = 0.1; i<(67/nu);i+=0.1){
+			for( double j=0.1;(i+j) < (67/nu); j+=0.1){
+				double a = i*(mu1+mu3);
+				double b = j*(mu2+mu3);
 				if(a+b >= (utilization-0.0001) && a+b <= (utilization+0.0001)){
 					System.out.println("i = " + i + " j = " + j);
 					System.out.println("a+b = " + (a+b));
@@ -57,9 +57,9 @@ public class Stability_condition {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	//	initialize_coap();
-	//	initialize_mqtt();
+		initialize_mqtt();
 	//	initialize_xmpp();
-		initialize_mqttws();
+	//	initialize_mqttws();
 		server_utilization(0.2);
 	//	server_utilization(0.4);
 	//	server_utilization(0.6);
